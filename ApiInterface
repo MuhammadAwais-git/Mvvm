@@ -1,0 +1,4 @@
+interface ApiInterface {
+    @GET("forecast?")
+    fun getAllData(@Query("lat") lat : Double,@Query("lon") lon : Double,@Query("appid") appid : String) : Call<DataWeatherModel>
+}
